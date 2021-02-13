@@ -1,14 +1,9 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
+document.getElementById('generate').addEventListener('click', => () {
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+let hasLength = prompt("How long would you like your password to be? (Between 8 and 128 characters)")
+let hasLowercase= confirm("Would you like your password to contain lowercase letters?")
+let hasUppercase = confirm("Would you like your password to contain uppercase letters?")
+let hasNumbers = confirm("Would you like your password to contain numbers?")
+let hasSymbols = confirm("Would you like your password to contain")
 
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+})
