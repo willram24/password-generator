@@ -29,8 +29,8 @@ document.getElementById('generate').addEventListener('click', () => {
   for (let i = 0; i < parseInt(requestedLength); i++) {
     password += charSet[Math.floor(Math.random() * charSet.length)]
   }
-  console.log(password)
 
+  document.getElementById('password').textContent = password
 
 })
 // Put all letters we want in one bucket
